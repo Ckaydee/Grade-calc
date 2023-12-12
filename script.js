@@ -3,6 +3,15 @@ document.getElementById("btn").addEventListener("click" , accumulationOfPercenta
 document.getElementById("light").addEventListener("click" , lighten);
 document.getElementById("dark").addEventListener("click" , darken);
 document.getElementById("reset").addEventListener("click" , reset);
+document.getElementById("clearBtn").addEventListener("click" , clearInputs);
+
+function clearInputs(){
+    document.getElementById("input1").value = "";
+    document.getElementById("input2").value = "";
+    document.getElementById("input3").value = "";
+    document.getElementById("input4").value = "";
+    document.getElementById("input5").value = "";
+}
 
 function lighten(){
     document.getElementById("html").style.backgroundColor = "white";
@@ -26,7 +35,6 @@ function lighten(){
     document.getElementById("input3").style.color = "black"
     document.getElementById("input4").style.color = "black"
     document.getElementById("input5").style.color = "black"
-    
 }
 
 function darken(){
